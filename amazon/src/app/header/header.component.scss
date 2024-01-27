@@ -1,0 +1,37 @@
+.header-container{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 7fr 1fr 2fr 1fr 2fr;
+    padding: 15px;
+    align-items: center;
+}
+
+.title img{
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+input{
+    border: none;
+    padding: 8px;
+    width: 500px;
+}
+
+.search-all{
+    height: 20px;
+}
+
+.search{
+    display: flex;
+}
+
+.material-symbols-outlined{
+    padding: 5px;
+    background-color: yellow;
+    color: black;
+}
