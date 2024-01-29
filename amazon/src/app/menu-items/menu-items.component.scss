@@ -1,0 +1,30 @@
+.menu-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(21, 39, 64);
+    color: white;
+    cursor: pointer;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-border{
+    padding: 5px;
+    border: 1.5px solid transparent;
+}
+
+.white-border:hover{
+    border: 1.5px solid white;
+    
+}

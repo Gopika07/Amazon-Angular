@@ -1,16 +1,37 @@
 .header-container{
-    background-color: black;
+    background-color: rgb(19, 25, 33);
     color: white;
-    display: grid;
-    grid-template-columns: 2fr 1fr 7fr 1fr 2fr 1fr 2fr;
-    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    height: 75px;
+}
+
+.border-white{
+    padding: 5px;
+    border: 1.5px solid transparent;
+}
+
+.border-white:hover{
+    border: 1.5px solid white;
 }
 
 .title img{
-    height: 40px;
-    width: 100px;
+    height: 30px;
+    width: 90px;
     padding: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.deliverG{
+    font-weight: 30px;
+    margin-left: 25px;
+}
+
+.deliverLoc{
     display: flex;
     justify-items: center;
     align-items: center;
@@ -18,20 +39,77 @@
 
 input{
     border: none;
-    padding: 8px;
-    width: 500px;
-}
-
-.search-all{
-    height: 20px;
+    padding: 10px;
+    width: 100%;
 }
 
 .search{
     display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 640px;
+    border-radius: 3px;
 }
 
-.material-symbols-outlined{
+.searchall{
+    width:50px;
+}
+
+select{
+    width: 50px;
+}
+
+#searchIcon{
     padding: 5px;
-    background-color: yellow;
+    background-color: rgb(253, 172, 101);
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 40px;
+}
+
+.country-img{
+    width: 20px;
+    display: flex;
+}
+
+.country-img img{
+    width: 100%;
+    height: 20px;
+    padding: 2px;
+}
+
+.country p{
+    font-size: 0.8 rem;
+    margin: 0;
+}
+
+.account{
+    font-size: 0.9rem;
+}
+
+.account p{
+    margin: 0;
+}
+
+.acc-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order{
+    width: 75px;
+}
+
+.order span{
+    font-weight: 900;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
