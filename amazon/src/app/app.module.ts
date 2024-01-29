@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuItemsComponent } from './menu-items/menu-items.component';
 import { ProductListingComponent } from './product-listing/product-listing.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { NumberOnlyDirective } from './number-only.directive';
 
 
 
@@ -18,10 +19,14 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserModule,
     CommonModule,
     MenuItemsComponent,
-    ProductListingComponent
+    ProductListingComponent,
+    NumberOnlyDirective
   ],
   bootstrap: [
     AppComponent
+  ],
+  exports:[
+    NumberOnlyDirective
   ]
 })
 export class AppModule { }
