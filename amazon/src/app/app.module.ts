@@ -6,6 +6,7 @@ import { MenuItemsComponent } from './menu-items/menu-items.component';
 import { ProductListingComponent } from './product-listing/product-listing.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NumberOnlyDirective } from './number-only.directive';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -18,6 +19,7 @@ import { NumberOnlyDirective } from './number-only.directive';
     // AppComponent,
     BrowserModule,
     CommonModule,
+    FormsModule,
     MenuItemsComponent,
     ProductListingComponent,
     NumberOnlyDirective
