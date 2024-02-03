@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuItemsComponent } from './menu-items.component';
+import { By } from '@angular/platform-browser';
 
 describe('MenuItemsComponent', () => {
   let component: MenuItemsComponent;
@@ -19,5 +20,10 @@ describe('MenuItemsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render the menu container with the correct structure', () => {
+    const headerContainer = fixture.debugElement.query(By.css('.menu-container'));
+    expect(headerContainer).toBeTruthy();
   });
 });
